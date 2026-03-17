@@ -2,7 +2,7 @@ import './App.css';
 import InsertDetails from './components/InsertDetails';
 import CalculateAttedence from './components/CalculateAttedence';
 import Indexs from './components/Indexs';
-import Main from './components/Main';
+import Main from './components/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ViewStudents from './components/ViewStudents';
 import TakeAttendances from './components/TakeAttendances';
