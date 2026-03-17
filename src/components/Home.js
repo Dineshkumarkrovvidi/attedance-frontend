@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-function Main() {
+function Home() {
   const navigate = useNavigate();
 
   const handleNavigate = (path) => {
