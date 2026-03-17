@@ -7,7 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import GetStudents from './components/GetStudents';
 import TakeAttendances from './components/TakeAttendances';
 import Login from './components/Login';
-import PrivateRoutes from './components/PrivateRoutes';
+import Private from './components/Private';
 
 function App() {
   return (
@@ -23,15 +23,15 @@ function App() {
           <Route path="/dashboard" element={<Indexs />}>
             
             <Route path="main" element={
-              <PrivateRoutes>
+              <Private>
                 <Home/>
-              </PrivateRoutes>
+              </Private>
             } />
 
-            <Route path="addstudent" element={<PrivateRoutes><InsertDetails /></PrivateRoutes>} />
-            <Route path="viewstudent" element={<PrivateRoutes><GetStudents /></PrivateRoutes>} />
-            <Route path="takeattedance" element={<PrivateRoutes><TakeAttendances /></PrivateRoutes>} />
-            <Route path="report" element={<PrivateRoutes><CalculateAttedence/></PrivateRoutes>} />
+            <Route path="addstudent" element={<Private><InsertDetails /></Private>} />
+            <Route path="viewstudent" element={<Private><GetStudents /></Private>} />
+            <Route path="takeattedance" element={<Private><TakeAttendances /></Private>} />
+            <Route path="report" element={<Private><CalculateAttedence/></Private>} />
 
           </Route>
 
