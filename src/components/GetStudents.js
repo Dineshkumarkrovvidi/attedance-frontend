@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import axios from "axios";
-function ViewStudents() {
+function GetStudents() {
 
   const [data,setData]=useState([])
   useEffect(()=>{
@@ -58,4 +58,4 @@ function ViewStudents() {
   );
 }
 
-export default ViewStudents;
+export default GetStudents;

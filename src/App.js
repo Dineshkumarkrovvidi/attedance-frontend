@@ -4,7 +4,7 @@ import CalculateAttedence from './components/CalculateAttedence';
 import Indexs from './components/Indexs';
 import Home from './components/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import ViewStudents from './components/ViewStudents';
+import GetStudents from './components/GetStudents';
 import TakeAttendances from './components/TakeAttendances';
 import Login_Page from './components/Login_Page';
 import PrivateRoutes from './components/PrivateRoutes';
@@ -29,7 +29,7 @@ function App() {
             } />
 
             <Route path="addstudent" element={<PrivateRoutes><InsertDetails /></PrivateRoutes>} />
-            <Route path="viewstudent" element={<PrivateRoutes><ViewStudents /></PrivateRoutes>} />
+            <Route path="viewstudent" element={<PrivateRoutes><GetStudents /></PrivateRoutes>} />
             <Route path="takeattedance" element={<PrivateRoutes><TakeAttendances /></PrivateRoutes>} />
             <Route path="report" element={<PrivateRoutes><CalculateAttedence/></PrivateRoutes>} />
 
