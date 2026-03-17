@@ -3,8 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 const Login = () => {
       const Navigate=useNavigate();
-      const user="dinesh";
-      const pass="dinesh14";
+     
       const [uname,setUname]=useState("")
       const [pwd,setPwd]=useState("")
       const [message,setMessage]=useState("")
@@ -13,7 +12,7 @@ const Login = () => {
 useEffect(() => {
   const token = localStorage.getItem("token");
   if (token) {
-    Navigate("/main");
+    Navigate("/dashboard/main");
   }
 }, []);
     const handlelogin= async(e)=>{
