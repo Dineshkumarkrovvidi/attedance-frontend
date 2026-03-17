@@ -1,7 +1,7 @@
 import React from 'react'
 import { Outlet, useNavigate } from 'react-router-dom'
 
-export default function Index() {
+export default function Indexs() {
   const token=localStorage.getItem("token")
   const Navigate=useNavigate()
   const handlelogout=()=>{

@@ -1,13 +1,12 @@
 import './App.css';
+import InsertDetails from './components/InsertDetails';
+import CalculateAttedence from './components/CalculateAttedence';
+import Indexs from './components/Indexs';
 import Main from './components/Main';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Index from './components/Index';
-import Addstudent from './components/Addstudents';
-import Viewstudent from './components/Viewstudents';
-import Takeattendance from './components/Takeattendance';
-import Generatereport from './components/Generatereport';
-import Login from './components/Login_page';
-import PrivateRoute from './components/Privateroutes';
+import ViewStudents from './components/ViewStudents';
+import TakeAttendances from './components/TakeAttendances';
+
 
 function App() {
   return (
@@ -20,7 +19,7 @@ function App() {
           <Route path="/" element={<Login />} />
 
           {/* Protected Layout */}
-          <Route path="/" element={<Index />}>
+          <Route path="/" element={<Indexs />}>
             
             <Route path="main" element={
               <PrivateRoute>
@@ -28,10 +27,10 @@ function App() {
               </PrivateRoute>
             } />
 
-            <Route path="addstudent" element={<PrivateRoute><Addstudent /></PrivateRoute>} />
-            <Route path="viewstudent" element={<PrivateRoute><Viewstudent /></PrivateRoute>} />
-            <Route path="takeattedance" element={<PrivateRoute><Takeattendance /></PrivateRoute>} />
-            <Route path="report" element={<PrivateRoute><Generatereport /></PrivateRoute>} />
+            <Route path="addstudent" element={<PrivateRoute><InsertDetails /></PrivateRoute>} />
+            <Route path="viewstudent" element={<PrivateRoute><ViewStudents /></PrivateRoute>} />
+            <Route path="takeattedance" element={<PrivateRoute><TakeAttendances /></PrivateRoute>} />
+            <Route path="report" element={<PrivateRoute><CalculateAttedence/></PrivateRoute>} />
 
           </Route>
 

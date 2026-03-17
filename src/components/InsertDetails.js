@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-export default function Addstudent() {
+export default function InsertDetails() {
   const [Technology, setTech] = useState("");
   const [sname, setSname] = useState("");
   const [phoneno, setPhoneno] = useState("");

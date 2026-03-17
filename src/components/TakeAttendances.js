@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-export default function Takeattendance() {
+export default function TakeAttendances() {
 
   const [students, setStudents] = useState([]);
   const [techinput, setTech] = useState("");

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Attedance } from "./data";
 import axios from "axios";
-export default function Generatereport() {
+export default function CalculateAttedence() {
   const [techinput, setTech] = useState("");
   const [fromDate, setFromDate] = useState("");
   const [toDate, setToDate] = useState("");
