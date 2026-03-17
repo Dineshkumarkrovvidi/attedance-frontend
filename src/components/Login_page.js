@@ -1,14 +1,14 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-const Login = () => {
+const Login_Page = () => {
       const Navigate=useNavigate();
       const user="dinesh";
       const pass="dinesh14";
       const [uname,setUname]=useState("")
       const [pwd,setPwd]=useState("")
       const [message,setMessage]=useState("")
-      const [Details,setDetails]=useState([])
+    
       
 useEffect(() => {
   const token = localStorage.getItem("token");
@@ -21,7 +21,7 @@ useEffect(() => {
         try{
         const res= await axios.post("http://127.0.0.1:8000/auth/login/",{username:uname,password:pwd})
          console.log(res.data)
-          Navigate('/main')   
+          Navigate('/dashboard/main')   
         localStorage.setItem("token", res.data.access);
     }
     catch{
@@ -39,9 +39,7 @@ useEffect(() => {
 
       <div className="bg-white p-5 rounded-2xl shadow-lg w-full max-w-md">
         
-        <h1 className="text-2xl font-bold text-center mb-6 text-gray-800">
-          Login Your Account
-        </h1>
+    
 
         <form className="flex flex-col gap-4">
            <span style={{color:"red"}}>{message}</span>
@@ -90,4 +88,4 @@ useEffect(() => {
   );
 };
 
-export default Login;
+export default Login_Page;

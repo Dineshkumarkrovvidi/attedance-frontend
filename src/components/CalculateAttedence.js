@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Attedance } from "./data";
+
 import axios from "axios";
 export default function CalculateAttedence() {
   const [techinput, setTech] = useState("");
   const [fromDate, setFromDate] = useState("");
   const [toDate, setToDate] = useState("");
   const [data,setData]=useState([])
-  const attdata = Attedance;
+
 useEffect(
   ()=>{
     axios

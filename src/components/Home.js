@@ -20,7 +20,7 @@ function Home() {
         
         {/* Add Student */}
         <div 
-          onClick={() => handleNavigate("/addstudent")}
+          onClick={() => handleNavigate("/dashboard/addstudent")}
           className="bg-white rounded-2xl shadow-lg p-6 cursor-pointer hover:scale-105 transition"
         >
           <h2 className="text-xl font-semibold text-blue-600 mb-2">
@@ -33,7 +33,7 @@ function Home() {
 
         {/* View Students */}
         <div 
-          onClick={() => handleNavigate("/viewstudent")}
+          onClick={() => handleNavigate("/dashboard/viewstudent")}
           className="bg-white rounded-2xl shadow-lg p-6 cursor-pointer hover:scale-105 transition"
         >
           <h2 className="text-xl font-semibold text-green-600 mb-2">
@@ -46,7 +46,7 @@ function Home() {
 
         {/* Take Attendance */}
         <div 
-          onClick={() => handleNavigate("/takeattedance")}
+          onClick={() => handleNavigate("/dashboard/takeattedance")}
           className="bg-white rounded-2xl shadow-lg p-6 cursor-pointer hover:scale-105 transition"
         >
           <h2 className="text-xl font-semibold text-yellow-600 mb-2">
@@ -59,7 +59,7 @@ function Home() {
 
         {/* Generate Report */}
         <div 
-          onClick={() => handleNavigate("/report")}
+          onClick={() => handleNavigate("/dashboard/report")}
           className="bg-white rounded-2xl shadow-lg p-6 cursor-pointer hover:scale-105 transition"
         >
           <h2 className="text-xl font-semibold text-purple-600 mb-2">

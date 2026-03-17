@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Data } from "./data";
+
 import axios from "axios";
 function Viewstudents() {
-  const Details= Data;
+
   const [data,setData]=useState([])
   useEffect(()=>{
     axios.get("http://127.0.0.1:8000/app/addattedence/")
