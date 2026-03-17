@@ -10,7 +10,7 @@ export default function CalculateAttedence() {
 useEffect(
   ()=>{
     axios
-        .get("http://127.0.0.1:8000/data/takeattedence/")
+        .get(" https://attedance-backend.onrender.com/data/takeattedence/")
         .then(res=>setData(res.data))
 },[])
   // 1. FILTER DATA

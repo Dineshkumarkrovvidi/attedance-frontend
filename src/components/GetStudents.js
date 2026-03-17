@@ -5,7 +5,7 @@ function GetStudents() {
 
   const [data,setData]=useState([])
   useEffect(()=>{
-    axios.get("http://127.0.0.1:8000/app/addattedence/")
+    axios.get(" https://attedance-backend.onrender.com/app/addattedence/")
     .then(res=>setData(res.data))
   },[])
   return (

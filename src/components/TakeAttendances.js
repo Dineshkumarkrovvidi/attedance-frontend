@@ -10,7 +10,7 @@ export default function TakeAttendances() {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/app/addattedence/")
+      .get(" https://attedance-backend.onrender.com/app/addattedence/")
       .then((res) => setStudents(res.data));
   }, []);
 
@@ -37,7 +37,7 @@ export default function TakeAttendances() {
       };
 
       axios
-        .post("http://127.0.0.1:8000/data/takeattedence/", data)
+        .post(" https://attedance-backend.onrender.com/takeattedence/", data)
         .then((res) => console.log(res.data))
         .catch((err) => console.log(err));
 

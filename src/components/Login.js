@@ -18,7 +18,7 @@ useEffect(() => {
     const handlelogin= async(e)=>{
         e.preventDefault();
         try{
-        const res= await axios.post("http://127.0.0.1:8000/auth/login/",{username:uname,password:pwd})
+        const res= await axios.post(" https://attedance-backend.onrender.com/auth/login/",{username:uname,password:pwd})
          console.log(res.data)
           Navigate('/dashboard/main')   
         localStorage.setItem("token", res.data.access);

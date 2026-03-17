@@ -14,7 +14,7 @@ const student = {
   phone_number: phoneno,
   email: email
 };
-   axios.post("http://127.0.0.1:8000/app/addattedence/", student)
+   axios.post(" https://attedance-backend.onrender.com/app/addattedence/", student)
    .then(res=>console.log(res.data))
     console.log(student);
 
