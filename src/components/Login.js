@@ -14,7 +14,7 @@ useEffect(() => {
   if (token) {
     Navigate("/dashboard/main");
   }
-}, []);
+}, [Navigate]);
     const handlelogin= async(e)=>{
         e.preventDefault();
         try{
