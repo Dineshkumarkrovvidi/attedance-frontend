@@ -75,4 +75,4 @@ function Home() {
   );
 }
 
-export default Main;
+export default Home;
