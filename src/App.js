@@ -1,13 +1,13 @@
 import './App.css';
-import Main from './components/main';
+import Main from './components/Main';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Index from './components';
-import Addstudent from './components/addstudent';
-import Viewstudent from './components/viewstudent';
+import Index from './components/Index';
+import Addstudent from './components/Addstudents';
+import Viewstudent from './components/Viewstudents';
 import Takeattendance from './components/Takeattendance';
 import Generatereport from './components/Generatereport';
-import Login from './components/loginpage';
-import PrivateRoute from './components/privateroute';
+import Login from './components/Login_page';
+import PrivateRoute from './components/Privateroutes';
 
 function App() {
   return (
