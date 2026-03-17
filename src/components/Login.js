@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-const Login_Page = () => {
+const Login = () => {
       const Navigate=useNavigate();
       const user="dinesh";
       const pass="dinesh14";
@@ -88,4 +88,4 @@ useEffect(() => {
   );
 };
 
-export default Login_Page;
+export default Login;

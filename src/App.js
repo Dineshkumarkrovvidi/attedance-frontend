@@ -6,7 +6,7 @@ import Home from './components/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import GetStudents from './components/GetStudents';
 import TakeAttendances from './components/TakeAttendances';
-import Login_Page from './components/Login_Page';
+import Login from './components/Login';
 import PrivateRoutes from './components/PrivateRoutes';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <Routes>
 
           {/* Public Route */}
-          <Route path="/" element={<Login_Page />} />
+          <Route path="/" element={<Login />} />
 
           {/* Protected Layout */}
           <Route path="/dashboard" element={<Indexs />}>
