@@ -16,7 +16,7 @@ function GetStudents() {
       </h1>
 
       <div className="max-w-5xl mx-auto bg-white shadow-lg rounded-xl overflow-hidden">
-        <table className="w-full border-collapse">
+        <table className="w-full border-collapse overflow-x-auto">
           
           <thead className="bg-indigo-600 text-white">
             <tr>
